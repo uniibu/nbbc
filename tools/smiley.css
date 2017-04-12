@@ -1,0 +1,219 @@
+
+.bbcode-smileys-angry,
+.bbcode-smileys-anime,
+.bbcode-smileys-bigeyes,
+.bbcode-smileys-bigsmile,
+.bbcode-smileys-bigwink,
+.bbcode-smileys-blue,
+.bbcode-smileys-boggle,
+.bbcode-smileys-confuse,
+.bbcode-smileys-cool,
+.bbcode-smileys-evil,
+.bbcode-smileys-frown,
+.bbcode-smileys-heart,
+.bbcode-smileys-irritated,
+.bbcode-smileys-laugh,
+.bbcode-smileys-lookleft,
+.bbcode-smileys-lookright,
+.bbcode-smileys-neutral,
+.bbcode-smileys-saint,
+.bbcode-smileys-sleepy,
+.bbcode-smileys-smile,
+.bbcode-smileys-smile3,
+.bbcode-smileys-sneaky,
+.bbcode-smileys-star,
+.bbcode-smileys-surprise,
+.bbcode-smileys-sweatdrop,
+.bbcode-smileys-teeth,
+.bbcode-smileys-tongue,
+.bbcode-smileys-wink,
+.bbcode-smileys-wink3,
+.bbcode-smileys-worry {
+    display: inline-block;
+    background: url('/assets/smileys/smileys.png') no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    margin: 3px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.bbcode-smileys-angry {
+    background-position: -1px 0;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-anime {
+    background-position: -18px 0;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-bigeyes {
+    background-position: -35px 0;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-bigsmile {
+    background-position: -52px 0;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-bigwink {
+    background-position: -69px 0;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-blue {
+    background-position: -1px -17px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-boggle {
+    background-position: -18px -17px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-confuse {
+    background-position: -35px -17px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-cool {
+    background-position: -52px -17px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-evil {
+    background-position: -69px -17px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-frown {
+    background-position: -1px -34px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-heart {
+    background-position: -18px -34px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-irritated {
+    background-position: -35px -34px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-laugh {
+    background-position: -52px -34px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-lookleft {
+    background-position: -69px -34px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-lookright {
+    background-position: -1px -51px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-neutral {
+    background-position: -18px -51px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-saint {
+    background-position: -35px -51px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-sleepy {
+    background-position: -52px -51px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-smile {
+    background-position: -69px -51px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-smile3 {
+    background-position: -1px -68px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-sneaky {
+    background-position: -18px -68px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-star {
+    background-position: -35px -68px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-surprise {
+    background-position: -52px -68px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-sweatdrop {
+    background-position: -69px -68px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-teeth {
+    background-position: -1px -85px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-tongue {
+    background-position: -18px -85px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-wink {
+    background-position: -35px -85px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-wink3 {
+    background-position: -52px -85px;
+    width: 16px;
+    height: 16px;
+}
+
+.bbcode-smileys-worry {
+    background-position: -69px -85px;
+    width: 16px;
+    height: 16px;
+}

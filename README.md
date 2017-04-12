@@ -5,9 +5,16 @@
 
 NBBC is a high-speed, extensible, easy-to-use validating BBCode parser. It was originally developed by Sean Werkema and
 most of the core code is still his. The core NBBC was last [updated officially](http://nbbc.sourceforge.net/) in 2010.
-This is forked from the best third-party fork we could find.
+This is forked from https://github.com/vanilla/nbbc.
 
-## Changes between this version of NBBC and the original project
+## Changes between this version of NBBC and the vanilla/nbbc project
+
+- Changed smileys to sprite to lower image downloads
+- Changed smileys to <span> instead of <img>
+- Smileys folder now includes a smileys.png which you can use as the smiley sprite.
+- For smiley css, you can use the smiley.css on the tools folder.
+
+## Changes between vanilla/nbbc project and the original project
 
 This project breaks backwards-compatibility with the 1.x version of NBBC which is why it has been given a major version
 number update even though no significant functionality has been added. Here are a summary of changes.
