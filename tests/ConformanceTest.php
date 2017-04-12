@@ -126,7 +126,7 @@ class ConformanceTest extends \PHPUnit_Framework_TestCase {
                 'descr' => ":) produces a smiley <span> element.",
                 'bbcode' => "This is a test of the emergency broadcasting system :)",
                 'regex' => <<<'REGEX'
-`This is a test of the emergency broadcasting system <span title=":\)" class="bbcode-smileys-smile"></span>`
+`This is a test of the emergency broadcasting system <span title=":)" class="bbcode-smileys-smile" ></span>`
 REGEX
 ,
             ]],
@@ -956,7 +956,7 @@ BBCODE
                     . "text3"
                     . "</div>\n"
                     . "</div>\n"
-                    . "text4 <span title=\":)\" class=\"bbcode-smileys-smile\"></span> text5 :o text6 :o",
+                    . "text4 <span title=\":)\" class=\"bbcode-smileys-smile\" ></span> text5 :o text6 :o",
             ]],
             [[
                 'descr' => "[quote=John]...[/quote] should produce a quote from John.",
@@ -1028,11 +1028,11 @@ BBCODE
                     . "After the columns.",
                 'html' => "Before the columns."
                     . "\n<table class=\"bbcode_columns\"><tbody><tr>\n"
-                    . "\n<td class=\"bbcode_column\">\n"
+                    . "\n</td><td class=\"bbcode_column\">\n"
                     . "This is <b>beside</b> it."
                     . "\n</td><td class=\"bbcode_column\">\n"
                     . "This is <i>also</i> beside it."
-                    . "\n</td></tr></tbody></table>\n"
+                    . "\n</tr></tbody></table>\n"
                     . "After the columns.",
             ]],
             [[
@@ -1045,9 +1045,9 @@ BBCODE
                 'bbcode' => "[center][columns][nextcol]This is also a [b]test[/b].[/center][/columns]",
                 'html' => "\n<div class=\"bbcode_center\" style=\"text-align:center\">\n"
                     . "\n<table class=\"bbcode_columns\"><tbody><tr>\n"
-                    . "\n<td class=\"bbcode_column\">\n"
+                    . "\n</td><td class=\"bbcode_column\">\n"
                     . "This is also a <b>test</b>."
-                    . "\n</td></tr></tbody></table>\n"
+                    . "\n</tr></tbody></table>\n"
                     . "\n</div>\n",
             ]],
         ];
