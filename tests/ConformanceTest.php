@@ -126,7 +126,7 @@ class ConformanceTest extends \PHPUnit_Framework_TestCase {
                 'descr' => ":) produces a smiley <span> element.",
                 'bbcode' => "This is a test of the emergency broadcasting system :)",
                 'regex' => <<<'REGEX'
-`This is a test of the emergency broadcasting system <span title=":)" class="bbcode-smileys-smile" ></span>`
+`This is a test of the emergency broadcasting system <span title=":\)" class="bbcode-smileys-smile" ><\/span>`
 REGEX
 ,
             ]],
