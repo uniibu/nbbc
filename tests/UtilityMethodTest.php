@@ -10,7 +10,7 @@ namespace Nbbc\Tests;
 
 use Nbbc\BBCode;
 
-class UtilityMethodTest extends \PHPUnit_Framework_TestCase {
+class UtilityMethodTest extends \PHPUnit\Framework\TestCase {
     /**
      * Provide data for {@link testIsValidTLDValid()} that should be valid.
      *
