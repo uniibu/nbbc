@@ -123,10 +123,10 @@ class ConformanceTest extends \PHPUnit_Framework_TestCase {
                 'html' => "This &lt;woo!&gt; &amp;&quot;yeah!&quot; 'sizzle'",
             ]],
             [[
-                'descr' => ":-) produces a smiley <img> element.",
-                'bbcode' => "This is a test of the emergency broadcasting system :-)",
+                'descr' => ":) produces a smiley <span> element.",
+                'bbcode' => "This is a test of the emergency broadcasting system :)",
                 'regex' => <<<'REGEX'
-`This is a test of the emergency broadcasting system <img src="smileys/smile.gif" alt=":-\)" title=":-\)" class="bbcode_smiley" />`
+`This is a test of the emergency broadcasting system <span class="bbcode-smileys-smile" title=":\)"></span>`
 REGEX
 ,
             ]],
@@ -311,7 +311,7 @@ BBCODE
                 'html' => "Not<br>\ncode.\n"
                     . "<div class=\"bbcode_code\">\n"
                     . "<div class=\"bbcode_code_head\">Code:</div>\n"
-                    . "<div class=\"bbcode_code_body\" style=\"white-space:pre\">\n    This is a test.    \n</div>\n"
+                    . "<div class=\"bbcode_code_body\" style=\"white-space:pre-line\">\n    This is a test.    \n</div>\n"
                     . "</div>\n"
                     . "Also not code.<br>\n",
             ]],
@@ -863,7 +863,7 @@ BBCODE
                 'html' => "Not code."
                     . "\n<div class=\"bbcode_code\">\n"
                     . "<div class=\"bbcode_code_head\">Code:</div>\n"
-                    . "<div class=\"bbcode_code_body\" style=\"white-space:pre\">A [b]and[/b] &amp; &lt;woo&gt;!\n"
+                    . "<div class=\"bbcode_code_body\" style=\"white-space:pre-line\">A [b]and[/b] &amp; &lt;woo&gt;!\n"
                     . "\tAnd a ['hey'] and a [/nonny] and a ho ho ho!</div>\n"
                     . "</div>\n"
                     . "Also not code.",
@@ -879,7 +879,7 @@ BBCODE
                 'html' => "Not code."
                     . "\n<div class=\"bbcode_code\">\n"
                     . "<div class=\"bbcode_code_head\">Code:</div>\n"
-                    . "<div class=\"bbcode_code_body\" style=\"white-space:pre\">\$foo['bar'] = 42;\n"
+                    . "<div class=\"bbcode_code_body\" style=\"white-space:pre-line\">\$foo['bar'] = 42;\n"
                     . "if (\$foo[&quot;bar&quot;] &lt; 42) \$foo[] = 0;</div>\n"
                     . "</div>\n"
                     . "Also not code.<br>\n",
@@ -892,7 +892,7 @@ BBCODE
                 'html' => "Not code."
                     . "\n<div class=\"bbcode_code\">\n"
                     . "<div class=\"bbcode_code_head\">Code:</div>\n"
-                    . "<div class=\"bbcode_code_body\" style=\"white-space:pre\">A &lt;b&gt;and&lt;/b&gt; &amp; &lt;woo&gt;!\n"
+                    . "<div class=\"bbcode_code_body\" style=\"white-space:pre-line\">A &lt;b&gt;and&lt;/b&gt; &amp; &lt;woo&gt;!\n"
                     . "\tAnd a [hey] and a [/nonny] and a ho ho ho!</div>\n"
                     . "</div>\n"
                     . "Also not code.",
@@ -1024,11 +1024,10 @@ BBCODE
             [[
                 'descr' => "[columns] should produce columns.",
                 'bbcode' => "Before the columns."
-                    . "[columns]This is a test.[nextcol]This is [b]beside[/b] it.[nextcol]This is [i]also[/i] beside it.[/columns]"
+                    . "[columns][nextcol]This is [b]beside[/b] it.[nextcol]This is [i]also[/i] beside it.[/columns]"
                     . "After the columns.",
                 'html' => "Before the columns."
-                    . "\n<table class=\"bbcode_columns\"><tbody><tr><td class=\"bbcode_column bbcode_firstcolumn\">\n"
-                    . "This is a test."
+                    . "\n<table class=\"bbcode_columns\"><tbody><tr>\n"
                     . "\n</td><td class=\"bbcode_column\">\n"
                     . "This is <b>beside</b> it."
                     . "\n</td><td class=\"bbcode_column\">\n"
@@ -1043,10 +1042,9 @@ BBCODE
             ]],
             [[
                 'descr' => "Bad column misuse doesn't break layouts.",
-                'bbcode' => "[center][columns]This is a test.[nextcol]This is also a [b]test[/b].[/center][/columns]",
+                'bbcode' => "[center][columns][nextcol]This is also a [b]test[/b].[/center][/columns]",
                 'html' => "\n<div class=\"bbcode_center\" style=\"text-align:center\">\n"
-                    . "\n<table class=\"bbcode_columns\"><tbody><tr><td class=\"bbcode_column bbcode_firstcolumn\">\n"
-                    . "This is a test."
+                    . "\n<table class=\"bbcode_columns\"><tbody><tr>\n"
                     . "\n</td><td class=\"bbcode_column\">\n"
                     . "This is also a <b>test</b>."
                     . "\n</td></tr></tbody></table>\n"
