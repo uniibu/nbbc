@@ -12,7 +12,7 @@
 	],
 	"repositories": [
 		{
-			"type": "https",
+			"type": "vcs",
 			"url": "https://github.com/uniibu/nbbc.git"
 		}
 	],
