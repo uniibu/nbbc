@@ -12,7 +12,7 @@ use Nbbc\BBCode;
 /**
  * Backwards compatibility testing for when new functionality is introduced.
  */
-class CompatibilityTest extends \PHPUnit\Framework\TestCase {
+class CompatibilityTest extends \PHPUnit_Framework_TestCase {
     /**
      * Test that new templates work like old templates.
      *
