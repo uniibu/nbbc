@@ -366,7 +366,7 @@ class BBCodeLibrary {
         ],
         'code' => [
             'mode' => BBCode::BBCODE_MODE_ENHANCED,
-            'template' => "\n<div class=\"bbcode_code\">\n<div class=\"bbcode_code_head\">Code:</div>\n<div class=\"bbcode_code_body\" style=\"white-space:pre-line\">{\$_content/v}</div>\n</div>\n",
+            'template' => "\n<div class=\"bbcode_code\">\n<div class=\"bbcode_code_head\">Code:</div>\n<div class=\"bbcode_code_body\" style=\"white-space:pre-line\"><pre>{\$_content/v}</pre></div>\n</div>\n",
             'class' => 'code',
             'allow_in' => ['listitem', 'block', 'columns'],
             'content' => BBCode::BBCODE_VERBATIM,
